@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <title>Чорук Ю. Р., ІМ-41, Лабораторна робота №2, варіант 4 (34)</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            table {
+                width: 800px;
+                table-layout: fixed;
+                border-collapse: collapse;
+            }
+
+            td {
+                border: 1px solid black;
+                height: 50px;
+                text-align: center;
+            }
+
+            #row1 {
+                background-color: #048f8f;
+            }
+            
+            #row1:hover {
+                background-color: #fb7070;
+            }
+            
+            #row2 {
+                background-color: #f5f504;
+            }
+
+            #row2:hover {
+                background-color: #0a0afb;
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <tr id="row1">
+                <td>Чорук</td>
+                <td>Юрій</td>
+                <td colspan="2" rowspan="2"></td>
+                <td colspan="2">Романович</td>
+                <td colspan="2" rowspan="2"></td>
+            </tr>
+
+            <tr id="row2">
+                <td colspan="2">ІМ-41</td>
+                <td colspan="2">ЛР-2 Варіант 4</td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="6"></td>
+            </tr>
+        </table>
+
+        <h3>1. Зображення за допомогою position</h3>
+        <div class="target-position">
+            <div class="target-shape outer-ring"></div>
+            <div class="target-shape inner-dot"></div>
+            <div class="target-shape h-line"></div>
+            <div class="target-shape v-line"></div>
+        </div>
+
+        <h3>2. Зображення за допомогою transform</h3>
+        <div class="target-transform">
+            <div class="target-shape outer-ring"></div>
+            <div class="target-shape inner-dot"></div>
+            <div class="target-shape h-line"></div>
+            <div class="target-shape v-line"></div>
+        </div>
+    </body>
+</html>
