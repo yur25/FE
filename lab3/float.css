@@ -1,0 +1,42 @@
+body {
+    margin: 100px;
+}
+
+#container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#img1 {
+    width: 25%;
+    height: 520px;
+    float: left;
+    background-color: #B9D0EA;
+    line-height: 520px;
+}
+
+#text1 {
+    width: 75%;
+    height: 520px;
+    float: right;
+    background-color: #AAE4F9;
+    line-height: 520px;
+}
+
+#img2 {
+    clear: both;
+    height: 150px;
+    background-color: #3777C8;
+    line-height: 150px;
+}
+
+#text2 {
+    height: 130px;
+    background-color: #FEF0BE;
+    line-height: 130px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
