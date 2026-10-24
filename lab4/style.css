@@ -1,0 +1,20 @@
+li::marker {
+    color: black;
+}
+
+.lab-image {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.image-buttons {
+    margin-top: 10px;
+}
+
+.image-buttons button {
+    margin-right: 5px;
+    cursor: pointer;
+}
