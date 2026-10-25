@@ -9,19 +9,14 @@ downloadButton.addEventListener("click", async () => {
         for (let i = 0; i < 5; i++) {
             const response = await fetch("https://randomuser.me/api");
             const data = await response.json();
-            const { picture, name, location, phone } = data.results[0];
-            console.log(picture.large);
-            console.log(name.first + " " + name.last);
-            console.log(location.city);
-            console.log(location.postcode);
-            console.log(phone);
+            const { picture, name, location, email } = data.results[0];
             userhtml += `
                 <div class="user">
                     <img src="${picture.large}">
-                    <p>Name: ${name.first + " " + name.last}</p>
-                    <p>City: ${location.city}</p>
                     <p>Postcode: ${location.postcode}</p>
-                    <p>Phone: ${phone}</p>
+                    <p>City: ${location.city}</p>
+                    <p>Name: ${name.first + " " + name.last}</p>
+                    <p>E-mail: ${email}</p>
                 </div>
             `;
         }
