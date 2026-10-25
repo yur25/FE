@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    font-family: Arial, sans-serif;
+}
+
+#download {
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(45, 52, 59);
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 0 5px rgb(45, 52, 59);
+    font-size: 16px;
+}
+
+#result-box {
+    height: 52px;
+    text-align: center;
+    color: rgb(25, 35, 45);
+}
+
+#result-text {
+    margin: 8px 0 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#user-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.user {
+    width: 200px;
+    flex: 0 0 200px;
+    background-color: rgb(52, 58, 64);
+    border-right: 1px solid rgb(45, 51, 57);
+    color: white;
+    font-size: 16px;
+    line-height: 1.45;
+    overflow: hidden;
+}
+
+.user:last-child {
+    border-right: 0;
+}
+
+.user img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.user p {
+    margin: 22px 23px;
+    overflow-wrap: anywhere;
+}
