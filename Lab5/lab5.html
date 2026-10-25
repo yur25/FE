@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Чорук Ю. Р., ІМ-41, Лабораторна робота №5, варіант 34</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <section>
+            <form id="userForm" novalidate>
+                <div class="form-row">
+                    <input id="fullName" name="fullName" type="text"
+                        placeholder="Прізвище І. П." aria-describedby="fullName-error"
+                        required>
+                    <span id="fullName-error" class="error-message"></span>
+                </div>
+
+                <div class="form-row">
+                    <input id="idCard" name="idCard" type="text"
+                        placeholder="Дві літери №123456" aria-describedby="idCard-error"
+                        required>
+                    <span id="idCard-error" class="error-message"></span>
+                </div>
+
+                <div class="form-row">
+                    <input id="faculty" name="faculty" type="text"
+                        placeholder="Назва факультету" aria-describedby="faculty-error"
+                        required>
+                    <span id="faculty-error" class="error-message"></span>
+                </div>
+
+                <div class="form-row">
+                    <input id="birthDate" name="birthDate" type="text"
+                        placeholder="ДД.ММ.РРРР" aria-describedby="birthDate-error"
+                        required>
+                    <span id="birthDate-error" class="error-message"></span>
+                </div>
+
+                <div class="form-row">
+                    <input id="address" name="address" type="text"
+                        placeholder="м. Назва міста" aria-describedby="address-error"
+                        required>
+                    <span id="address-error" class="error-message"></span>
+                </div>
+
+                <button type="submit">Підтвердити</button>
+                <p id="form-status" role="alert" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section>
+            <div class="table-controls">
+                <input id="cellColor" type="color" value="#3777c8"
+                    aria-label="Колір клітинки">
+            </div>
+
+            <table id="eventTable" aria-label="Таблиця з номерами від 1 до 36">
+                <tbody></tbody>
+            </table>
+        </section>
+    </body>
+</html>
